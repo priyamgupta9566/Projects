@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<script src="validate.js"> 
+</script>
+<body bgcolor="lightyellow">
+<h1 style="color:red;"><u>Student Registration form</u></h1>
+<center>
+<form  action="abc.php" method="post" onsubmit="validation()">
+<fieldset>
+<legend>Student Form</legend>
+<table cellpadding="10" cellspacing="0" height="100%" width="20%" border="20px dotted">
+<tr>
+ <td><label>First Name:</label></td>
+ <td><input type="text" name="First name" required="true"></td>
+</tr>
+<tr>  
+  <td><label>Last Name:</label></td>
+  <td><input type="text" name="Last Name" required="true"></td>
+</tr>
+<tr>  
+  <td><label>E-Mail:</label></td>
+  <td><input type="email" name="email" required="true"></td> 
+</tr>  
+<tr>
+  <td><label>Mobile No.:</label></td>
+  <td><input type="mobile-number" name="mobile-number" required="true"></td>
+</tr> 
+<tr> 
+  <td rowspan="3"><label>Gender</label>
+  <td><input type="radio" name="gender" value="male">Male</td>
+  <tr>
+  <td><input type="radio" name="gender" value="female">Female</td></tr>
+  <tr><td><input type="radio" name="gender" value="others">Transgender</td></tr>
+</tr>
+<tr>
+  <td><label for "Birthday">Date of Birth:</label></td>
+  <td><input type="date" name="DateOfBirth" required="true"></td>
+</tr>
+<tr>   
+   <td><label>Address:</label></td>
+   <td><input type="textarea" name="Address" required="true"></td>
+</tr>
+<tr>  
+  <td><label>Branch:</label></td>
+   <td><select>
+   <option>CSE</option>
+   <option>IT</option>
+   <option>ECE</option>
+   <option>EEE</option>
+   </select></td>
+<tr>
+   <td><label>Year:</label></td>
+   <td><select>
+   <option>1st</option>
+   <option>2nd</option>
+   <option>3rd</option>
+   <option>4th</option>
+   </select></td>
+</tr>
+<tr>
+<td><label>Password</label></td>
+<td> <input type="Password"></td>
+</tr>
+<tr>
+    <td><input type="Submit" value="Register"></td> 
+    <td><input type="Reset" value="Reset"></td> 
+</tr>
+</table>
+</form>
+
+</center>
+
+</fieldset>
+</body>
+</head>
+</html>
