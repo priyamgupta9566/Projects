@@ -205,10 +205,9 @@ Y_Train_df=pd.DataFrame(Y_Train)
 Y_Test_df=pd.DataFrame(Y_Test)
 Y_Pred_df=pd.DataFrame(Y_Pred)
 Analysis=pd.concat([X_Test_df,Y_Test_df,Y_Pred_df],axis=1)
-###################################################################
 
 #Building the optimal Model
-#b0+b1X+B2X -- B0 should be 1
+
 import statsmodels.formula.api as sm
 #Bo is not considered so we will add 1 coulmn with the 
 #values as 1 in our dataset
